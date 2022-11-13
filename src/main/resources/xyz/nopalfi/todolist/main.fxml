@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.nopalfi.todolist.MainWindowController">
+   <children>
+      <ScrollPane prefHeight="608.0" prefWidth="222.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="202.0" prefWidth="220.0">
+               <children>
+                  <ListView id="lstTodo" fx:id="lstTodo" onMouseClicked="#onTodoListClick" prefHeight="608.0" prefWidth="215.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Pane layoutX="222.0" prefHeight="608.0" prefWidth="681.0">
+         <children>
+            <Label id="lblJudul" fx:id="lblJudul" layoutX="22.0" layoutY="38.0" text="Judul: " />
+            <Label id="lblTags" fx:id="lblTags" layoutX="22.0" layoutY="64.0" text="Tags: " />
+            <Label id="lblDatetime" fx:id="lblDateTime" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="462.0" layoutY="64.0" text="Tanggal dan Waktu" textAlignment="RIGHT" />
+            <Separator layoutY="101.0" prefHeight="5.0" prefWidth="681.0" />
+            <AnchorPane layoutY="104.0" prefHeight="498.0" prefWidth="681.0">
+               <children>
+                  <TextArea id="txtArea" fx:id="txtArea" prefHeight="498.0" prefWidth="681.0" />
+               </children>
+            </AnchorPane>
+         </children></Pane>
+   </children>
+</Pane>
